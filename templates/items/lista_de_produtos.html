@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% comment %} Aqui foi alterado apenas para static - vide comentários na aula {% endcomment %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+{% comment %} # Aula 18 {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+</head>
+<body>
+{% comment %} # Aula 18: depois de você ter criado/alterado a view, você adiciona aqui a variável {% endcomment %}
+    <h1>{{ mensagem }}</h1>
+</body>
+</html>
